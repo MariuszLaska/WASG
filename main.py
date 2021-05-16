@@ -83,7 +83,7 @@ class Map:
                 idx = c.index(country)
                 print(country + ": " + d[idx])
                 radius = (float(d[idx])) * coeff
-                folium.Circle([float(c_long), float(c_lat)],popup=(c[idx] + "  " +d[idx]), radius = radius, fill=True).add_to(map)
+                folium.Circle([float(c_long), float(c_lat)],tooltip=(c[idx] + "  " +d[idx]), radius = radius, fill=True).add_to(map)
             except Exception as e:
                  pass
 
